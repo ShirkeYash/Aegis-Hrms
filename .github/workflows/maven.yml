@@ -30,5 +30,3 @@ jobs:
           echo "Running tests headlessly"
           CHROME_ARGS="--headless=new --no-sandbox --disable-dev-shm-usage --window-size=1920,1080"
           mvn clean test -Dtest=essential.LoginLogout,essential.AddDepartment,essential.EmployeeOnboarding,essential.LeaveManagement,enterprise.ExpenseManagement
-      - name: Install xmllint
-        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
